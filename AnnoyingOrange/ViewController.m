@@ -20,6 +20,31 @@
 
 @implementation ViewController
 
+-(void) fruitPressed
+{
+    
+}
+
+-(void) knifePressed
+{
+    
+}
+
+-(void) orangePressed
+{
+    
+}
+
+-(void) funnyPressed
+{
+    
+}
+
+-(void) rlyFunnyPressed
+{
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -34,6 +59,7 @@
     _btnFruit = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [_btnFruit setTitle:@"Hey Fruit!" forState:UIControlStateNormal];
     [_btnFruit setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [_btnFruit addTarget:self action:@selector(fruitPressed) forControlEvents:UIControlEventTouchUpInside];
     
     _btnFruit.frame = CGRectMake(30, 100, 110, 100);
     _btnFruit.backgroundColor = [UIColor orangeColor];
@@ -45,6 +71,7 @@
     _btnKnife = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [_btnKnife setTitle:@"Knife!" forState:UIControlStateNormal];
     [_btnKnife setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [_btnKnife addTarget:self action:@selector(knifePressed) forControlEvents:UIControlEventTouchUpInside];
     
     _btnKnife.frame = CGRectMake(320-140, 100, 110, 100);
     _btnKnife.backgroundColor = [UIColor orangeColor];
@@ -55,6 +82,7 @@
     _btnOrange = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [_btnOrange setTitle:@"That's Funny!" forState:UIControlStateNormal];
     [_btnOrange setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [_btnOrange addTarget:self action:@selector(orangePressed) forControlEvents:UIControlEventTouchUpInside];
     
     _btnOrange.frame = CGRectMake(320/2 - 55, 225, 110, 100);
     _btnOrange.backgroundColor = [UIColor orangeColor];
@@ -65,6 +93,8 @@
     _btnFunny = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [_btnFunny setTitle:@"I'm an Orange!" forState:UIControlStateNormal];
     [_btnFunny setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [_btnFunny addTarget:self action:@selector(funnyPressed) forControlEvents:UIControlEventTouchUpInside];
+
     
     _btnFunny.frame = CGRectMake(30, 350, 110, 100);
     _btnFunny.backgroundColor = [UIColor orangeColor];
@@ -77,6 +107,7 @@
     [_btnRlyFunny setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     _btnRlyFunny.titleLabel.numberOfLines = 2;
     _btnRlyFunny.titleLabel.textAlignment = NSTextAlignmentCenter;
+    [_btnFruit addTarget:self action:@selector(rlyFunnyPressed) forControlEvents:UIControlEventTouchUpInside];
     
     _btnRlyFunny.frame = CGRectMake(320-140, 350, 110, 100);
     _btnRlyFunny.backgroundColor = [UIColor orangeColor];
@@ -90,11 +121,6 @@
     [self.view addSubview:_btnOrange];
     [self.view addSubview:_btnFunny];
     [self.view addSubview:_btnRlyFunny];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
