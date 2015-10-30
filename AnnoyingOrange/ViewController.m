@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+@import AVFoundation;
 
 @interface ViewController ()
 
@@ -16,38 +17,122 @@
 @property (nonatomic) UIButton* btnFunny;
 @property (nonatomic) UIButton* btnRlyFunny;
 
+@property (nonatomic) AVAudioPlayer* plyrFruit;
+@property (nonatomic) AVAudioPlayer* plyrKnife;
+@property (nonatomic) AVAudioPlayer* plyrOrange;
+@property (nonatomic) AVAudioPlayer* plyrFunny;
+@property (nonatomic) AVAudioPlayer* plyrRlyFunny;
+
+@property (nonatomic) int indFruit;
+@property (nonatomic) int indKnife;
+
 @end
 
 @implementation ViewController
 
 -(void) fruitPressed
 {
+    [_plyrFruit play];
+    _indFruit++;
     
+    if(_indFruit % 3 == 0) {
+        
+        NSString* fileName = @"AO_HeyApple";
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
+        _plyrFruit = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    }
+    else if(_indFruit % 3 == 1) {
+        
+        NSString* fileName = @"AO_HeyPear";
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
+        _plyrFruit = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    }
+    else {
+        
+        NSString* fileName = @"AO_HeyPlumpkin";
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
+        _plyrFruit = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    }
 }
 
 -(void) knifePressed
 {
+    [_plyrKnife play];
+    _indKnife++;
     
+    if (_indKnife % 2 == 0) {
+        
+        NSString* fileName = @"AO_Rand1";
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
+        _plyrKnife = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    }
+    else {
+        
+        NSString* fileName = @"AO_Rand2";
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
+        _plyrKnife = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    }
 }
 
 -(void) orangePressed
 {
-    
+    [_plyrOrange play];
 }
 
 -(void) funnyPressed
 {
-    
+    [_plyrFunny play];
 }
 
 -(void) rlyFunnyPressed
 {
-    
+    [_plyrRlyFunny play];
+}
+
+-(void) createAudioStuff
+{
+    {
+        NSString* fileName = @"AO_ImAnOrange";
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
+        _plyrOrange = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    }
+    {
+        NSString* fileName = @"AO_ShortLaugh";
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
+        _plyrFunny = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    }
+    {
+        NSString* fileName = @"AO_LongLaugh";
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
+        _plyrRlyFunny = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    }
+    {
+        NSString* fileName = @"AO_HeyApple";
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
+        _plyrFruit = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    }
+    {
+        NSString* fileName = @"AO_Rand1";
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
+        _plyrKnife = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self createAudioStuff];
     
     self.view.backgroundColor = [UIColor colorWithRed:.99 green:.4 blue:0 alpha:1];
     
