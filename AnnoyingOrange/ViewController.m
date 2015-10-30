@@ -17,8 +17,13 @@
 @property (nonatomic) UIButton* btnFunny;
 @property (nonatomic) UIButton* btnRlyFunny;
 
-@property (nonatomic) AVAudioPlayer* plyrFruit;
-@property (nonatomic) AVAudioPlayer* plyrKnife;
+@property (nonatomic) AVAudioPlayer* plyrApple;
+@property (nonatomic) AVAudioPlayer* plyrPear;
+@property (nonatomic) AVAudioPlayer* plyrPlumpkin;
+
+@property (nonatomic) AVAudioPlayer* plyrRand1;
+@property (nonatomic) AVAudioPlayer* plyrRand2;
+
 @property (nonatomic) AVAudioPlayer* plyrOrange;
 @property (nonatomic) AVAudioPlayer* plyrFunny;
 @property (nonatomic) AVAudioPlayer* plyrRlyFunny;
@@ -34,53 +39,39 @@
 {
     NSLog(@"Fruit pressed");
     
-    [_plyrFruit play];
-    _indFruit++;
+    if(_plyrApple.isPlaying || _plyrPear.isPlaying || _plyrPlumpkin.isPlaying) {
+        return;
+    }
     
     if(_indFruit % 3 == 0) {
-        
-        NSString* fileName = @"AO_HeyApple";
-        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
-        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
-        _plyrFruit = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+        [_plyrApple play];
     }
     else if(_indFruit % 3 == 1) {
-        
-        NSString* fileName = @"AO_HeyPear";
-        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
-        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
-        _plyrFruit = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+        [_plyrPear play];
     }
     else {
-        
-        NSString* fileName = @"AO_HeyPlumpkin";
-        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
-        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
-        _plyrFruit = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+        [_plyrPlumpkin play];
     }
+    
+    _indFruit++;
 }
 
 -(void) knifePressed
 {
     NSLog(@"Knife pressed");
-
-    [_plyrKnife play];
-    _indKnife++;
+    
+    if(_plyrRand1.isPlaying || _plyrRand2.isPlaying) {
+        return;
+    }
     
     if (_indKnife % 2 == 0) {
-        
-        NSString* fileName = @"AO_Rand1";
-        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
-        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
-        _plyrKnife = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+        [_plyrRand1 play];
     }
     else {
-        
-        NSString* fileName = @"AO_Rand2";
-        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
-        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
-        _plyrKnife = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+        [_plyrRand2 play];
     }
+    
+    _indKnife++;
 }
 
 -(void) orangePressed
@@ -108,7 +99,7 @@
 {
     {
         NSString* fileName = @"AO_ImAnOrange";
-        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"wav"];
         NSURL* fileURL = [NSURL fileURLWithPath:filePath];
         _plyrOrange = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
     }
@@ -126,15 +117,33 @@
     }
     {
         NSString* fileName = @"AO_HeyApple";
-        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"wav"];
         NSURL* fileURL = [NSURL fileURLWithPath:filePath];
-        _plyrFruit = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+        _plyrApple = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    }
+    {
+        NSString* fileName = @"AO_HeyPear";
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"wav"];
+        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
+        _plyrPear = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    }
+    {
+        NSString* fileName = @"AO_HeyPlumpkin";
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"wav"];
+        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
+        _plyrPlumpkin = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
     }
     {
         NSString* fileName = @"AO_Rand1";
+        NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"wav"];
+        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
+        _plyrRand1 = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    }
+    {
+        NSString* fileName = @"AO_Rand2";
         NSString* filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"mp3"];
         NSURL* fileURL = [NSURL fileURLWithPath:filePath];
-        _plyrKnife = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+        _plyrRand2 = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
     }
 }
 
