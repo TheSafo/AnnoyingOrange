@@ -13,6 +13,19 @@
 		43FA895C1BE359A1006139BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43FA895A1BE359A1006139BE /* Main.storyboard */; };
 		43FA895E1BE359A1006139BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43FA895D1BE359A1006139BE /* Assets.xcassets */; };
 		43FA89611BE359A1006139BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43FA895F1BE359A1006139BE /* LaunchScreen.storyboard */; };
+		43FA89701BE36384006139BE /* AO_HeyPlumpkin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43FA89681BE36384006139BE /* AO_HeyPlumpkin.mp3 */; };
+		43FA89711BE36384006139BE /* AO_HeyPear.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43FA89691BE36384006139BE /* AO_HeyPear.mp3 */; };
+		43FA89721BE36384006139BE /* AO_ImAnOrange.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43FA896A1BE36384006139BE /* AO_ImAnOrange.mp3 */; };
+		43FA89731BE36384006139BE /* AO_Rand2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43FA896B1BE36384006139BE /* AO_Rand2.mp3 */; };
+		43FA89741BE36384006139BE /* AO_Rand1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43FA896C1BE36384006139BE /* AO_Rand1.mp3 */; };
+		43FA89751BE36384006139BE /* AO_HeyApple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43FA896D1BE36384006139BE /* AO_HeyApple.mp3 */; };
+		43FA89761BE36384006139BE /* AO_LongLaugh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43FA896E1BE36384006139BE /* AO_LongLaugh.mp3 */; };
+		43FA89771BE36384006139BE /* AO_ShortLaugh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43FA896F1BE36384006139BE /* AO_ShortLaugh.mp3 */; };
+		43FA897E1BE36A3A006139BE /* AO_Rand1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43FA89791BE36A3A006139BE /* AO_Rand1.wav */; };
+		43FA897F1BE36A3A006139BE /* AO_ImAnOrange.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43FA897A1BE36A3A006139BE /* AO_ImAnOrange.wav */; };
+		43FA89801BE36A3A006139BE /* AO_HeyPlumpkin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43FA897B1BE36A3A006139BE /* AO_HeyPlumpkin.wav */; };
+		43FA89811BE36A3A006139BE /* AO_HeyPear.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43FA897C1BE36A3A006139BE /* AO_HeyPear.wav */; };
+		43FA89821BE36A3A006139BE /* AO_HeyApple.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43FA897D1BE36A3A006139BE /* AO_HeyApple.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +39,19 @@
 		43FA895D1BE359A1006139BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43FA89601BE359A1006139BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43FA89621BE359A1006139BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43FA89681BE36384006139BE /* AO_HeyPlumpkin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = AO_HeyPlumpkin.mp3; path = AnnoyingOrange/AO_HeyPlumpkin.mp3; sourceTree = "<group>"; };
+		43FA89691BE36384006139BE /* AO_HeyPear.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = AO_HeyPear.mp3; path = AnnoyingOrange/AO_HeyPear.mp3; sourceTree = "<group>"; };
+		43FA896A1BE36384006139BE /* AO_ImAnOrange.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = AO_ImAnOrange.mp3; path = AnnoyingOrange/AO_ImAnOrange.mp3; sourceTree = "<group>"; };
+		43FA896B1BE36384006139BE /* AO_Rand2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = AO_Rand2.mp3; path = AnnoyingOrange/AO_Rand2.mp3; sourceTree = "<group>"; };
+		43FA896C1BE36384006139BE /* AO_Rand1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = AO_Rand1.mp3; path = AnnoyingOrange/AO_Rand1.mp3; sourceTree = "<group>"; };
+		43FA896D1BE36384006139BE /* AO_HeyApple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = AO_HeyApple.mp3; path = AnnoyingOrange/AO_HeyApple.mp3; sourceTree = "<group>"; };
+		43FA896E1BE36384006139BE /* AO_LongLaugh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = AO_LongLaugh.mp3; path = AnnoyingOrange/AO_LongLaugh.mp3; sourceTree = "<group>"; };
+		43FA896F1BE36384006139BE /* AO_ShortLaugh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = AO_ShortLaugh.mp3; path = AnnoyingOrange/AO_ShortLaugh.mp3; sourceTree = "<group>"; };
+		43FA89791BE36A3A006139BE /* AO_Rand1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = AO_Rand1.wav; path = AnnoyingOrange/finalSounds/AO_Rand1.wav; sourceTree = "<group>"; };
+		43FA897A1BE36A3A006139BE /* AO_ImAnOrange.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = AO_ImAnOrange.wav; path = AnnoyingOrange/finalSounds/AO_ImAnOrange.wav; sourceTree = "<group>"; };
+		43FA897B1BE36A3A006139BE /* AO_HeyPlumpkin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = AO_HeyPlumpkin.wav; path = AnnoyingOrange/finalSounds/AO_HeyPlumpkin.wav; sourceTree = "<group>"; };
+		43FA897C1BE36A3A006139BE /* AO_HeyPear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = AO_HeyPear.wav; path = AnnoyingOrange/finalSounds/AO_HeyPear.wav; sourceTree = "<group>"; };
+		43FA897D1BE36A3A006139BE /* AO_HeyApple.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = AO_HeyApple.wav; path = AnnoyingOrange/finalSounds/AO_HeyApple.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +88,7 @@
 				43FA89551BE359A1006139BE /* AppDelegate.m */,
 				43FA89571BE359A1006139BE /* ViewController.h */,
 				43FA89581BE359A1006139BE /* ViewController.m */,
+				43FA89781BE3638C006139BE /* AudioFiles */,
 				43FA895A1BE359A1006139BE /* Main.storyboard */,
 				43FA895D1BE359A1006139BE /* Assets.xcassets */,
 				43FA895F1BE359A1006139BE /* LaunchScreen.storyboard */,
@@ -77,6 +104,27 @@
 				43FA89521BE359A1006139BE /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43FA89781BE3638C006139BE /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				43FA89791BE36A3A006139BE /* AO_Rand1.wav */,
+				43FA897A1BE36A3A006139BE /* AO_ImAnOrange.wav */,
+				43FA897B1BE36A3A006139BE /* AO_HeyPlumpkin.wav */,
+				43FA897C1BE36A3A006139BE /* AO_HeyPear.wav */,
+				43FA897D1BE36A3A006139BE /* AO_HeyApple.wav */,
+				43FA89681BE36384006139BE /* AO_HeyPlumpkin.mp3 */,
+				43FA89691BE36384006139BE /* AO_HeyPear.mp3 */,
+				43FA896A1BE36384006139BE /* AO_ImAnOrange.mp3 */,
+				43FA896B1BE36384006139BE /* AO_Rand2.mp3 */,
+				43FA896C1BE36384006139BE /* AO_Rand1.mp3 */,
+				43FA896D1BE36384006139BE /* AO_HeyApple.mp3 */,
+				43FA896E1BE36384006139BE /* AO_LongLaugh.mp3 */,
+				43FA896F1BE36384006139BE /* AO_ShortLaugh.mp3 */,
+			);
+			name = AudioFiles;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +185,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				43FA89611BE359A1006139BE /* LaunchScreen.storyboard in Resources */,
+				43FA89711BE36384006139BE /* AO_HeyPear.mp3 in Resources */,
+				43FA89821BE36A3A006139BE /* AO_HeyApple.wav in Resources */,
+				43FA89701BE36384006139BE /* AO_HeyPlumpkin.mp3 in Resources */,
+				43FA89721BE36384006139BE /* AO_ImAnOrange.mp3 in Resources */,
+				43FA89761BE36384006139BE /* AO_LongLaugh.mp3 in Resources */,
+				43FA897E1BE36A3A006139BE /* AO_Rand1.wav in Resources */,
+				43FA89731BE36384006139BE /* AO_Rand2.mp3 in Resources */,
+				43FA89771BE36384006139BE /* AO_ShortLaugh.mp3 in Resources */,
 				43FA895E1BE359A1006139BE /* Assets.xcassets in Resources */,
+				43FA897F1BE36A3A006139BE /* AO_ImAnOrange.wav in Resources */,
 				43FA895C1BE359A1006139BE /* Main.storyboard in Resources */,
+				43FA89811BE36A3A006139BE /* AO_HeyPear.wav in Resources */,
+				43FA89751BE36384006139BE /* AO_HeyApple.mp3 in Resources */,
+				43FA89741BE36384006139BE /* AO_Rand1.mp3 in Resources */,
+				43FA89801BE36A3A006139BE /* AO_HeyPlumpkin.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +361,7 @@
 				43FA89671BE359A1006139BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
