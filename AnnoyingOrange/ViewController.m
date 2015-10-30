@@ -32,6 +32,8 @@
 
 -(void) fruitPressed
 {
+    NSLog(@"Fruit pressed");
+    
     [_plyrFruit play];
     _indFruit++;
     
@@ -60,6 +62,8 @@
 
 -(void) knifePressed
 {
+    NSLog(@"Knife pressed");
+
     [_plyrKnife play];
     _indKnife++;
     
@@ -81,16 +85,22 @@
 
 -(void) orangePressed
 {
+    NSLog(@"Orange pressed");
+
     [_plyrOrange play];
 }
 
 -(void) funnyPressed
 {
+    NSLog(@"Funny pressed");
+    
     [_plyrFunny play];
 }
 
 -(void) rlyFunnyPressed
 {
+    NSLog(@"Rly Funny pressed");
+
     [_plyrRlyFunny play];
 }
 
@@ -165,7 +175,7 @@
     _btnKnife.layer.borderWidth = 2;
     
     _btnOrange = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [_btnOrange setTitle:@"That's Funny!" forState:UIControlStateNormal];
+    [_btnOrange setTitle:@"I'm an orange!" forState:UIControlStateNormal];
     [_btnOrange setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_btnOrange addTarget:self action:@selector(orangePressed) forControlEvents:UIControlEventTouchUpInside];
     
@@ -176,7 +186,7 @@
     _btnOrange.layer.borderWidth = 2;
     
     _btnFunny = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [_btnFunny setTitle:@"I'm an Orange!" forState:UIControlStateNormal];
+    [_btnFunny setTitle:@"That's Funny!" forState:UIControlStateNormal];
     [_btnFunny setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_btnFunny addTarget:self action:@selector(funnyPressed) forControlEvents:UIControlEventTouchUpInside];
 
@@ -192,7 +202,7 @@
     [_btnRlyFunny setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     _btnRlyFunny.titleLabel.numberOfLines = 2;
     _btnRlyFunny.titleLabel.textAlignment = NSTextAlignmentCenter;
-    [_btnFruit addTarget:self action:@selector(rlyFunnyPressed) forControlEvents:UIControlEventTouchUpInside];
+    [_btnRlyFunny addTarget:self action:@selector(rlyFunnyPressed) forControlEvents:UIControlEventTouchUpInside];
     
     _btnRlyFunny.frame = CGRectMake(320-140, 350, 110, 100);
     _btnRlyFunny.backgroundColor = [UIColor orangeColor];
